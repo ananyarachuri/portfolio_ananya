@@ -4,6 +4,7 @@ import { profile, experience, projects, toolkit, education, certs } from "./data
 import { Reveal, SectionHead, Icon, ease } from "./ui.jsx";
 import ArtifactOnePage from "./ArtifactOne.jsx";
 import ArtifactTwoPage from "./ArtifactTwo.jsx";
+import ArtifactThreePage from "./ArtifactThree.jsx";
 
 /* Pages and artifacts. Add a new artifact here and it appears in the top bar and on Home. */
 export const ARTIFACTS = [
@@ -26,6 +27,16 @@ export const ARTIFACTS = [
     summary: "Two real-world cases, credit scoring and diabetic eye screening, showing how the data decides which approach fits.",
     audience: "Business and product decision-makers",
     icon: "layers",
+  },
+  {
+    id: "artifact-3",
+    no: "03",
+    tab: "Inside an LLM",
+    title: "Inside the Mind of a Language Model",
+    kind: "Interactive AI lab",
+    summary: "A hands-on lab on how LLMs are trained, why they hallucinate, and which tasks they can be trusted with.",
+    audience: "Colleagues and managers who use AI tools",
+    icon: "bolt",
   },
 ];
 
@@ -371,6 +382,7 @@ export default function App() {
           )}
           {page === "artifact-1" && <ArtifactOnePage go={go} prev={prev} next={next} />}
           {page === "artifact-2" && <ArtifactTwoPage go={go} prev={prev} next={next} />}
+          {page === "artifact-3" && <ArtifactThreePage go={go} prev={prev} next={next} />}
           <Footer />
         </motion.main>
       </AnimatePresence>

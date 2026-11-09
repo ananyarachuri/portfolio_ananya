@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Reveal, SectionHead, Icon, PageNav, ease } from "./ui.jsx";
+import { Reveal, SectionHead, Icon, PageNav, ArtifactTemplate, ease } from "./ui.jsx";
 
 /* ---------- Retina illustration (generated, not a real patient image) ---------- */
 function rng(seed) {
@@ -257,6 +257,20 @@ export default function ArtifactTwoPage({ go, prev, next }) {
           </Reveal>
         </div>
       </section>
+
+      <ArtifactTemplate
+        title="Machine Learning vs. Deep Learning: Two Real-World Cases"
+        objective="Explain when traditional machine learning or deep learning is the right choice, using two real-world cases."
+        audience="Business and product decision-makers choosing an AI approach."
+        process={[
+          "Chose two contrasting cases: credit scoring and diabetic eye screening",
+          "Researched each case with industry, regulatory and clinical sources",
+          "Compared data type, explainability, data volume and compute",
+          "Turned the written report into visuals for a non-technical reader",
+        ]}
+        tools={{ chips: ["Academic and industry research", "Claude Docs", "React + Framer Motion"] }}
+        value="A decision-maker can see in a few minutes that the right model depends on what the data looks like and who must understand the result."
+      />
 
       {/* DECISION GUIDE */}
       <section className="section">

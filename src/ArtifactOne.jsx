@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Reveal, SectionHead, Icon, PageNav, ease } from "./ui.jsx";
+import { Reveal, SectionHead, Icon, PageNav, ArtifactTemplate, ease } from "./ui.jsx";
 
 export const COACH_URL = "https://claude.ai/artifact/MtzLyELJ6mFkZUT2bCstWM";
 
@@ -86,6 +86,20 @@ export default function ArtifactOnePage({ go, prev, next }) {
           </Reveal>
         </div>
       </section>
+
+      <ArtifactTemplate
+        title="Offer Ready Coach: an AI interview-prep coach"
+        objective="Give people preparing for Data Analyst and AI interviews realistic practice with honest, specific feedback."
+        audience="Job seekers in data and AI, from new grads to senior professionals and career switchers."
+        process={[
+          "Defined the audience and three practice modes",
+          "Wrote the coaching instructions, including guardrails",
+          "Built a scorecard that reads each score from the reply",
+          "Added a session summary with strengths, gaps and next steps",
+        ]}
+        tools={{ chips: ["Claude", "Prompt engineering", "HTML, CSS, JavaScript"] }}
+        value="In about 15 minutes, a candidate gets scored practice and a stronger answer to borrow, without the coach inventing experience or numbers."
+      />
 
       <section className="section">
         <div className="wrap">

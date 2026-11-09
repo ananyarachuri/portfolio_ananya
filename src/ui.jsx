@@ -66,6 +66,41 @@ export function Icon({ name, size = 18, className }) {
   );
 }
 
+/* Portfolio template: the same labeled elements on every artifact page. */
+export function ArtifactTemplate({ title, objective, audience, process, tools, value }) {
+  const rows = [
+    ["Title", title, "doc"],
+    ["Objective", objective, "target"],
+    ["Audience", audience, "eye"],
+    ["Process", process, "layers"],
+    ["Tools", tools, "bolt"],
+    ["Value proposition", value, "check"],
+  ];
+  return (
+    <section className="section tpl-section">
+      <div className="wrap">
+        <Reveal className="tpl card" aria-label="Artifact summary">
+          <p className="eyebrow">Artifact summary</p>
+          <dl className="tpl-grid">
+            {rows.map(([k, v, ic]) => (
+              <div key={k} className={`tpl-item ${k === "Value proposition" ? "tpl-value" : ""}`}>
+                <dt><Icon name={ic} size={15} /> {k}</dt>
+                <dd>
+                  {Array.isArray(v) ? (
+                    <ol className="tpl-steps">{v.map((s) => <li key={s}>{s}</li>)}</ol>
+                  ) : Array.isArray(v) === false && typeof v === "object" && v?.chips ? (
+                    <span className="chips">{v.chips.map((c) => <span key={c} className="chip">{c}</span>)}</span>
+                  ) : v}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 export function PageNav({ prev, next, go }) {
   return (
     <div className="wrap page-nav">
