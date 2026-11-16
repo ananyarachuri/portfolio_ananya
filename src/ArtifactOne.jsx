@@ -60,7 +60,7 @@ export default function ArtifactOnePage({ go, prev, next }) {
       <section className="a-hero">
         <div className="wrap a-hero-grid">
           <Reveal className="a-hero-copy">
-            <p className="a-kicker"><span className="a-no">Artifact 01</span> AI chat application · Workshop 1 AI Lab</p>
+            <p className="a-kicker"><span className="a-no">Artifact 1</span> AI chat application · Workshop 1 AI Lab</p>
             <h1>Offer Ready Coach</h1>
             <p className="lede">
               An AI interview-prep coach for people going after Data Analyst and AI roles. It runs mock

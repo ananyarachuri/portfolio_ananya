@@ -11,8 +11,8 @@ import ArtifactFourPage from "./ArtifactFour.jsx";
 export const ARTIFACTS = [
   {
     id: "artifact-1",
-    no: "01",
-    tab: "Interview Coach",
+    no: "1",
+    tab: "Artifact 1",
     title: "Offer Ready Coach",
     kind: "AI chat application",
     summary: "An AI coach that runs scored mock interviews, rewrites resume bullets honestly and matches candidates to job posts.",
@@ -21,8 +21,8 @@ export const ARTIFACTS = [
   },
   {
     id: "artifact-2",
-    no: "02",
-    tab: "ML vs Deep Learning",
+    no: "2",
+    tab: "Artifact 2",
     title: "Machine Learning vs. Deep Learning",
     kind: "Research brief",
     summary: "Two real-world cases, credit scoring and diabetic eye screening, showing how the data decides which approach fits.",
@@ -31,8 +31,8 @@ export const ARTIFACTS = [
   },
   {
     id: "artifact-3",
-    no: "03",
-    tab: "Inside an LLM",
+    no: "3",
+    tab: "Artifact 3",
     title: "Inside the Mind of a Language Model",
     kind: "Interactive AI lab",
     summary: "A hands-on lab on how LLMs are trained, why they hallucinate, and which tasks they can be trusted with.",
@@ -41,8 +41,8 @@ export const ARTIFACTS = [
   },
   {
     id: "artifact-4",
-    no: "04",
-    tab: "Data Fights Back",
+    no: "4",
+    tab: "Artifact 4",
     title: "When the Data Fights Back",
     kind: "Coached ML case study",
     summary: "Three real data problems: cleaning messy reviews, scaling a biased screener, and sharing patient records safely.",
@@ -104,7 +104,6 @@ function Nav({ page, go }) {
               {page === p.id && (
                 <motion.span layoutId="tab-pill" className="tab-pill" transition={{ type: "spring", stiffness: 420, damping: 36 }} />
               )}
-              {p.no && <span className="tab-no">{p.no}</span>}
               <span className="tab-label">{p.tab}</span>
             </a>
           ))}

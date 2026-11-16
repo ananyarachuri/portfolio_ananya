@@ -212,7 +212,7 @@ export default function ArtifactTwoPage({ go, prev, next }) {
       <section className="a-hero">
         <div className="wrap a-hero-grid">
           <Reveal className="a-hero-copy">
-            <p className="a-kicker"><span className="a-no">Artifact 02</span> Research brief · Two real-world cases</p>
+            <p className="a-kicker"><span className="a-no">Artifact 2</span> Research brief · Two real-world cases</p>
             <h1>Machine Learning vs. Deep Learning</h1>
             <p className="lede">
               The right approach depends on the data and the stakes. Traditional machine learning fits

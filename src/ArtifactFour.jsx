@@ -232,7 +232,7 @@ export default function ArtifactFourPage({ go, prev, next }) {
       <section className="a-hero">
         <div className="wrap a-hero-grid">
           <Reveal className="a-hero-copy">
-            <p className="a-kicker"><span className="a-no">Artifact 04</span> Coached case study · AIML-500 Machine Learning Fundamentals</p>
+            <p className="a-kicker"><span className="a-no">Artifact 4</span> Coached case study · AIML-500 Machine Learning Fundamentals</p>
             <h1>When the Data Fights Back</h1>
             <p className="lede">
               A coached session on three real machine-learning data problems: cleaning 800,000 messy

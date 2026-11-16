@@ -136,7 +136,7 @@ export default function ArtifactThreePage({ go, prev, next }) {
       <section className="a-hero">
         <div className="wrap a-hero-grid">
           <Reveal className="a-hero-copy">
-            <p className="a-kicker"><span className="a-no">Artifact 03</span> Interactive AI lab · Lab notebook</p>
+            <p className="a-kicker"><span className="a-no">Artifact 3</span> Interactive AI lab · Lab notebook</p>
             <h1>Inside the Mind of a Language Model</h1>
             <p className="lede">
               An interactive session with Professor Predict, an AI tutor, on how large language models
