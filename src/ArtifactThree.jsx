@@ -74,7 +74,7 @@ const FIGS = [
   ["Completion summary and badge"],
 ].map(([cap], i) => ({ src: `${BASE}/fig-${String(i + 1).padStart(2, "0")}.jpg`, cap, n: i + 1 }));
 
-function Lightbox({ fig, onClose, onStep }) {
+export function Lightbox({ fig, onClose, onStep }) {
   useEffect(() => {
     if (!fig) return;
     const k = (e) => {

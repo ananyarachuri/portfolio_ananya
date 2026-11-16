@@ -5,6 +5,7 @@ import { Reveal, SectionHead, Icon, ease } from "./ui.jsx";
 import ArtifactOnePage from "./ArtifactOne.jsx";
 import ArtifactTwoPage from "./ArtifactTwo.jsx";
 import ArtifactThreePage from "./ArtifactThree.jsx";
+import ArtifactFourPage from "./ArtifactFour.jsx";
 
 /* Pages and artifacts. Add a new artifact here and it appears in the top bar and on Home. */
 export const ARTIFACTS = [
@@ -37,6 +38,16 @@ export const ARTIFACTS = [
     summary: "A hands-on lab on how LLMs are trained, why they hallucinate, and which tasks they can be trusted with.",
     audience: "Colleagues and managers who use AI tools",
     icon: "bolt",
+  },
+  {
+    id: "artifact-4",
+    no: "04",
+    tab: "Data Fights Back",
+    title: "When the Data Fights Back",
+    kind: "Coached ML case study",
+    summary: "Three real data problems: cleaning messy reviews, scaling a biased screener, and sharing patient records safely.",
+    audience: "Data and product teams training or sharing models",
+    icon: "shield",
   },
 ];
 
@@ -383,6 +394,7 @@ export default function App() {
           {page === "artifact-1" && <ArtifactOnePage go={go} prev={prev} next={next} />}
           {page === "artifact-2" && <ArtifactTwoPage go={go} prev={prev} next={next} />}
           {page === "artifact-3" && <ArtifactThreePage go={go} prev={prev} next={next} />}
+          {page === "artifact-4" && <ArtifactFourPage go={go} prev={prev} next={next} />}
           <Footer />
         </motion.main>
       </AnimatePresence>
